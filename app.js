@@ -87,9 +87,32 @@ should return 'johnsmith@example.com'.
 
 Complete the exercise in the space below:
 */
-const generateEmail = (str1,str2) => {
-return `${str1}@${str2}`;
+// const generateEmail = (str1,str2) => {
+// return `${str1}@${str2}`;
+// }
+
+// console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
+////////////////////////////////////////////////////////
+/*
+Exercise 5: greetUser()
+
+Define a function called greetUser. It should take a name and a 
+time of day (morning, afternoon, evening) and return a personalized 
+greeting.
+
+Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
+
+Complete the exercise in the space below:
+*/
+
+const greetUser = (user,greet) => {
+ if(greet == "morning"){
+  return `Good morning,${user}!`;
+ } else if(greet == "afternoon"){
+  return `Good afternoon,${user}!`;
+ }
+ return `Good evening,${user}!`;
 }
 
-console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
-////////////////////////////////////////////////////////
+console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+////////////////////////////////////////
