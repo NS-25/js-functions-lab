@@ -105,14 +105,36 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
-const greetUser = (user,greet) => {
- if(greet == "morning"){
-  return `Good morning,${user}!`;
- } else if(greet == "afternoon"){
-  return `Good afternoon,${user}!`;
- }
- return `Good evening,${user}!`;
+// const greetUser = (user,greet) => {
+//  if(greet == "morning"){
+//   return `Good morning,${user}!`;
+//  } else if(greet == "afternoon"){
+//   return `Good afternoon,${user}!`;
+//  }
+//  return `Good evening,${user}!`;
+// }
+
+// console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+////////////////////////////////////////
+/*
+Exercise 6: maxOfThree()
+
+Define a function, maxOfThree. It should accept three numbers 
+and return the largest among them.
+
+Example: maxOfThree(17, 4, 9) should return 17.
+
+Complete the exercise in the space below:
+*/
+const maxOfThree = (num1,num2,num3) => {
+if (num1 > num2 || num1 > num3){
+ return num1;
+} else if (num2 > num1 || num2 > num3){
+  return num2;
+}
+  return num3;P
 }
 
-console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
-////////////////////////////////////////
+
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+///////
