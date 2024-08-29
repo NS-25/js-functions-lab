@@ -69,7 +69,7 @@ Complete the exercise in the space below:
 //     if (char === vowels[i]) {
 //       return true;
 //     } 
-    
+
 //   }
 //   return false;
 // };
@@ -197,20 +197,54 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 
 Complete the exercise in the space below:
 */
-const basicCalculator = (num1,num2,str) => {
-if(str === 'add'){
-  return num1 + num2;
-}else if(str === 'subtract'){
-  return num1 - num2;
-}else if (str === 'multiply'){
-  return num1 * num2;
-}else if (str === 'divide'){
-  return num1 / num2;
-} else {
-  return "Error";
-}
-}
+// const basicCalculator = (num1,num2,str) => {
+// if(str === 'add'){
+//   return num1 + num2;
+// }else if(str === 'subtract'){
+//   return num1 - num2;
+// }else if (str === 'multiply'){
+//   return num1 * num2;
+// }else if (str === 'divide'){
+//   return num1 / num2;
+// } else {
+//   return "Error";
+// }
+// }
 
 
-console.log('Exercise 9 Result:', basicCalculator(10, 5, "multiply"));
+// console.log('Exercise 9 Result:', basicCalculator(10, 5, "multiply"));
 ///////////////////
+
+/*
+Exercise 10: calculateGrade()
+
+Define a function called calculateGrade. 
+It should take a numerical score and return the corresponding letter 
+grade (A, B, C, D, F). 
+
+For example, 90 and above yields an 'A', 80-89 is a 'B', 
+and 70-79 is a 'C', 60-69 is a 'D' and anything lower than a 60 is an 'F'.
+
+Example: calculateGrade(100) should return A.
+
+Complete the exercise in the space below:
+*/
+const calculateGrade = (num) => {
+  if(num >= 90){
+   return 'A';
+  }else if(num >= 80){
+    return 'B';
+  } else if(num >= 70){
+    return 'C';
+  } else if(num >= 60){
+    return 'D';
+  } else if (num <= 60){
+    return 'F'
+  } else {
+    return 'not an interger!!'
+  }
+}
+
+
+console.log('Exercise 10 Result:', calculateGrade(100));
+/////////////////////////////////////
