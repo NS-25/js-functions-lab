@@ -229,22 +229,46 @@ Example: calculateGrade(100) should return A.
 
 Complete the exercise in the space below:
 */
-const calculateGrade = (num) => {
-  if(num >= 90){
-   return 'A';
-  }else if(num >= 80){
-    return 'B';
-  } else if(num >= 70){
-    return 'C';
-  } else if(num >= 60){
-    return 'D';
-  } else if (num <= 60){
-    return 'F'
-  } else {
-    return 'not an interger!!'
-  }
+// const calculateGrade = (num) => {
+//   if(num >= 90){
+//    return 'A';
+//   }else if(num >= 80){
+//     return 'B';
+//   } else if(num >= 70){
+//     return 'C';
+//   } else if(num >= 60){
+//     return 'D';
+//   } else if (num <= 60){
+//     return 'F'
+//   } else {
+//     return 'not an interger!!'
+//   }
+// }
+
+
+// console.log('Exercise 10 Result:', calculateGrade(100));
+/////////////////////////////////////
+/*
+Exercise 11: createUsername()
+
+Define a function called createUsername. 
+It should take a first name and a last name and return a username. 
+
+The username should be a combination of the following:
+- The first three letters of the first name.
+- The first three letters of the last name.
+- The total character count of the first and last name combined.
+
+Example: createUsername('Samantha', 'Green') should return 'SamGre13'.
+
+Complete the exercise in the space below:
+*/
+
+const createUsername = (str1,str2) => {
+ //console.log(parseInt(str1.length + str2.length));
+ 
+ return `${str1.slice(0,3)}${str2.slice(0,3)}${parseInt(str1.length + str2.length)}`;
 }
 
-
-console.log('Exercise 10 Result:', calculateGrade(100));
-/////////////////////////////////////
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+//////////////////////////////////////////////////////////////////////
